@@ -119,6 +119,30 @@ h6 {
   left: calc(50% - 25px);
 }
 
+#subscribe .section-header {
+  margin-bottom: 0;
+  position: relative;
+  padding-bottom: 20px;
+}
+#subscribe .section-header::before{
+  display: none;
+}
+#subscribe .section-header p{
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 45px;
+}
+#subscribe .section-header p::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 5px;
+  background: #FF6687;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
 .section-header h2 {
   font-size: 36px;
   text-transform: uppercase;
@@ -600,7 +624,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0;
 }
 
-#intro .about-btn {
+#intro .about-btn,
+#subscribe .about-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -617,9 +642,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #FF6687;
 }
 
-#intro .about-btn:hover {
+#intro .about-btn:hover,
+#subscribe .about-btn:hover {
   background: #FF6687;
   color: #fff;
+}
+
+#subscribe .about-btn{
+  margin: 10px auto;
+  display: block;
+  width: 270px;
+  text-align: center;
 }
 
 @-webkit-keyframes pulsate-btn {
@@ -698,17 +731,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Speakers Section
 --------------------------------------------------------------*/
 
-#speakers {
+#speakers,
+#organizadores {
   padding: 60px 0 30px 0;
 }
 
-#speakers .speaker {
+#speakers .speaker,
+#organizadores .speaker{
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
 }
 
-#speakers .speaker .details {
+#speakers .speaker .details,
+#organizadores .speaker .details {
   background: rgba(6, 12, 34, 0.76);
   position: absolute;
   left: 0;
@@ -719,52 +755,66 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-#speakers .speaker .details h3 {
+#speakers .speaker .details h3,
+#organizadores .speaker .details h3 {
   color: #fff;
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-#speakers .speaker .details p {
+#speakers .speaker .details p,
+#organizadores .speaker .details p {
   color: #fff;
   font-size: 15px;
   margin-bottom: 10px;
   font-style: italic;
 }
 
-#speakers .speaker .details .social {
+#speakers .speaker .details .social,
+#organizadores .speaker .details .social {
   height: 30px;
 }
-
-#speakers .speaker .details a {
+#speakers .speaker .details .social a i,
+#organizadores .speaker .details .social a i{
+  font-size: 18px;
+  margin: 0 5px;
+}
+#speakers .speaker .details a,
+#organizadores .speaker .details a {
   color: #fff;
 }
 
-#speakers .speaker .details a:hover {
+#speakers .speaker .details a:hover,
+#organizadores .speaker .details a:hover {
   color: #FF6687;
 }
 
-#speakers .speaker:hover .details {
+#speakers .speaker:hover .details,
+#organizadores .speaker:hover .details {
   bottom: 0;
 }
 
-#speakers-details {
+#speakers-details,
+#organizadores-details {
   padding: 60px 0;
 }
 
-#speakers-details .details h2 {
+#speakers-details .details h2,
+#organizadores-details .details h2 {
   color: #112363;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-#speakers-details .details .social {
+#speakers-details .details .social,
+#organizadores-details .details .social {
   margin-bottom: 15px;
 }
 
-#speakers-details .details .social a {
+#speakers-details .details .social a,
+#organizadores-details .details .social a {
   background: #e9edfb;
   color: #112363;
   line-height: 1;
@@ -776,16 +826,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 9px;
 }
 
-#speakers-details .details .social a:hover {
+#speakers-details .details .social a:hover,
+#organizadores-details .details .social a:hover {
   background: #FF6687;
   color: #fff;
 }
 
-#speakers-details .details .social a i {
+#speakers-details .details .social a i,
+#organizadores-details .details .social a i {
   font-size: 18px;
 }
 
-#speakers-details .details p {
+#speakers-details .details p,
+#organizadores-details .details p {
   color: #112363;
   font-size: 15px;
   margin-bottom: 10px;
