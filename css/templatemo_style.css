@@ -234,7 +234,7 @@ nav.main-menu a:link, nav.main-menu a:hover, nav.main-menu a:focus, nav.main-men
     background: #fff;
     padding: 20px;
     margin: auto;
-    min-height: 545px;
+    min-height: 552px;
 }
 #templatemo_features .feature-box:hover .feature-box-inner {
     box-shadow: inset 0px 0px 0px 0px #cecece;
